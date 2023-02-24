@@ -1,17 +1,18 @@
-package web.service;
+package web.dao;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
-public class CarServiceImpl implements CarService {
+@Repository
+public class CarDaoImpl implements CarDao {
 
     private List<Car> cars = new ArrayList<>();
 
-    public CarServiceImpl() {
+    public CarDaoImpl() {
         cars.add(new Car("Toyota", "Camry", 2020));
         cars.add(new Car("Honda", "Civic", 2021));
         cars.add(new Car("Tesla", "Model 3", 2022));
