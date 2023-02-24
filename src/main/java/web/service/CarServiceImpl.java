@@ -20,11 +20,6 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public List<Car> getCars() {
-        return cars;
-    }
-
-    @Override
     public List<Car> getCars(Integer count) {
         if (count == null || count >= 5) {
             return cars;
